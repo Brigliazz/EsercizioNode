@@ -1,0 +1,4 @@
+PROBLEMATICHE GATEWAY:
+vari /api/v1/ dove servono.
+f12 ispezaiona --> console clicchi sull'errore e modifichi.
+pizdalisi

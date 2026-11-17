@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doom Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="doom-box">
+        <h1>💀 DOOM WEATHER</h1>
+        <p>Scopri il destino della tua città</p>
+
+        <!-- Form di ricerca -->
+        <form id="doomForm">
+            <div class="input-group">
+                <label for="city">Città</label>
+                <input type="text" id="city" placeholder="Es. Roma, Milano..." required>
+            </div>
+
+            <div class="input-group">
+                <label for="date">Giorno</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <button type="submit">SCOPRI IL METEO 🔥</button>
+        </form>
+
+        <!-- Risultato -->
+        <div id="result" class="result-box hidden">
+            <h2 id="resTitle">--</h2>
+            <div class="weather-info">
+                <span id="resTemp" class="temp">--°C</span>
+                <span id="resCond">--</span>
+            </div>
+            <p id="resDesc" class="desc">--</p>
+        </div>
+    </div>
+
+    <!-- Script JS esterno -->
+    <script src="script.js"></script>
+</body>
+</html>

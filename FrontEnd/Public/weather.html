@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather API</title>
+
+    <link rel="stylesheet" href="/api/v1/css/navbar.css"> //riferimento al css con /api/v1
+    <link rel="stylesheet" href="/api/v1/css/footer.css">
+    <link rel="stylesheet" href="/api/v1/css/weather.css">
+    
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <script src="/api/v1/js/navbar.js"></script>
+
+    <!-- WEATHER CONTENT -->
+    <div class="weather-wrapper">
+
+        <div class="weather-box">
+            <h2>Weather API</h2>
+            <p class="subtitle">Inserisci il nome della città per sapere le condizioni meteo</p>
+
+            <form id="weather-form">
+                <input type="text" id="city-input" name="city" placeholder="Nome della città" required>
+                <button type="submit">Invia</button>
+            </form>
+        </div>
+
+
+        <!-- RISULTATO METEO -->
+        <div class="weather-box" id="weather-result"></div>
+        <!-- fine del dom-->
+    </div>
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    <script src="/api/v1/js/footer.js"></script>
+    <script src="/api/v1/js/weather.js"></script>
+</body>
+
+</html>
